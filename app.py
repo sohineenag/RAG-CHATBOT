@@ -14,7 +14,7 @@ load_dotenv()
 client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 
 st.set_page_config(page_title="RAG Chatbot", page_icon="🤖", layout="wide")
-st.title("🤖 Gemini RAG Chatbot")
+st.title("🤖 RAG Chatbot")
 
 # -------------------- THEME --------------------
 theme = st.get_option("theme.base")
@@ -165,7 +165,7 @@ QUESTION:
             except:
                 break
 
-    return "⚠️ Model temporarily unavailable."
+    return "⚠️ Models temporarily unavailable."
 
 # -------------------- CHAT INPUT --------------------
 user_input = st.chat_input("Ask something...")
